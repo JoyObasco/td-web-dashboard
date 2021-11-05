@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Dashboard</title>
+    <link rel="stylesheet" href="Assets/Css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+</head>
+<body>
+    <div class="dashboard"> <!--DASHBOARD-->
+        <section class="navigation"> <!--NAVIGATION-->
+            <img src="Assets/img/Instincthub logo.png" alt="InstinctHub Logo">
+
+            <div>
+                <span><img src="Assets/img/bx_bxs-dashboard.png" alt="Overview"> Overview</span>
+                <span><img src="Assets/img/akar-icons_file.png" alt="Classes"> Classes</span>
+                <span><img src="Assets/img/codicon_graph.png" alt="Analytics"> Analytics</span>
+                <span><img src="Assets/img/ic_baseline-group.png" alt="Community"> Community</span>
+                <span><img src="Assets/img/fe_logout.png" alt="Logout"> Logout</span>
+            </div>
+
+            <div class="upgrade">
+                <img src="Assets/img/Upgrade illustration.png" alt="">
+                <p><b>Upgrade your student portal account</b></p>
+                <input type="submit" value="Upgrade">
+            </div>
+        </section> <!--NAVIGATION END-->
+
+        <section class="search-box"> <!--SEARCH-BOX-->
+            <h3>My course dashboard</h3>
+            <div class="search">
+                <form action="">
+                    <input type="text" name="search" id="search" placeholder="You are looking for...">
+                    <span><img src="Assets/img/bx_bx-search.png" alt=""></span>
+                </form>
+                <div class="notification">
+                    <span><img src="Assets/img/codicon_bell-dot.png" alt="notification"></span>
+                    <span><img src="Assets/img/User profile.png" alt="User"></span>
+                </div>
+            </div>
+        </section> <!--SEARCH-BOX END-->
+
+        <section class="main"> <!--MAIN-->
+            <div class="chart">
+                <div class="first-chart">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                    <h4>Daily</h4>
+                    <p>Activities</p>
+                </div>
+
+                <div>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                    <h4>Monthly</h4>
+                    <p>Activities</p>
+                </div>
+
+                <div>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                    <h4>Yearly</h4>
+                    <p>Activities</p>
+                </div>
+            </div>
+
+            <div class="table">
+                <table>
+                    <tr class="head">
+                        <th>No</th>
+                        <th>Course Name</th>
+                        <th>Department</th>
+                        <th>Units</th>
+                        <th>Gpa</th>
+                    </tr>
+
+                    <tr>
+                        <td>0</td>
+                        <td>Tax Academy Introduction</td>
+                        <td>Finances</td>
+                        <td>3</td>
+                        <td>4.3/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Transfer Pricing</td>
+                        <td>Customer Service</td>
+                        <td>3</td>
+                        <td>4.3/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Tax Academy for Beginners</td>
+                        <td>Purchasing</td>
+                        <td>3</td>
+                        <td>4.3/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>New Business</td>
+                        <td>Finances</td>
+                        <td>3</td>
+                        <td>3.0/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Tax Accounting</td>
+                        <td>Administration</td>
+                        <td>8</td>
+                        <td>4.7/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Motion Design</td>
+                        <td>IT Dep</td>
+                        <td>6</td>
+                        <td>4.4/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>3D Modeling</td>
+                        <td>IT Dep</td>
+                        <td>3</td>
+                        <td>3.0/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Brand Strategy on Instagram</td>
+                        <td>Marketing</td>
+                        <td>3</td>
+                        <td>4.7/5</td>
+                    </tr>
+                </table>
+
+                <div class="main-end">
+                    <h1>When nothing goes right, go left</h1>
+                    <p>Build your skills with courses and degree online from anywhere with professional instructors</p>
+                    <button class="Learn"> Learn more</button>
+                    <span class="female"><img src="Assets/img/female image.png" alt="Female Image"> </span>
+                </div>
+            </div>
+        </section> <!--MAIN END-->
+    </div> <!--DASHBOARD END-->
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [71, 29],
+                    backgroundColor: [
+                   'rgb(170, 51, 106)',
+                   'rgb(70,130,180)',
+                    ],
+                    hoverOffset: 4
+                }]
+            },
+
+        });
+        </script>
+</body>
+</html>
