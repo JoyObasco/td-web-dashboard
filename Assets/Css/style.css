@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+body{
+    margin: 0px;
+    background-color: #F7F7F7;
+}
+
+.dashboard{
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+
+
+/* -----------
+Navigation
+--------- */
+.dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    margin-top: 10px;
+}
+
+.dashboard .navigation img.logo{
+    width: 70px;
+    height: 60px;
+    image-rendering: pixelated;
+    border-radius: 10px;
+}
+
+.dashboard .navigation div .icons{
+    background-color: black;
+    margin-left: 5px;
+    margin-left: 5px;
+    margin-top: 2rem;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+}
+
+.dashboard .navigation div .upgrade{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.dashboard .navigation .upgrade{
+    border: 1px solid paleturquoise;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard .navigation .upgrade .box{
+    margin-top: -25px;
+}
+
+.dashboard .navigation .upgrade p{
+    margin-top: -6px;
+    align-content: center;
+}
+
+.dashboard .navigation .upgrade input{
+    margin-top: -4px;
+    color: white;
+    background-color: black;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 6px;
+}
+
+/* -----------
+Search Box
+--------- */
+.dashboard .search-box{
+    border:  0px 0px 3px 0px black;
+    width: auto;
+    height: 30vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.dashboard .search-box h3{
+    font-size: 15px;
+}
+.dashboard .search-box .search form{
+    margin-top: 20px;
+    position: relative;
+}
+
+.dashboard .search-box .search form input{
+    width: 90%;
+    font: 16px;
+    padding: 10px 50px 10px 10px;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.dashboard .search-box .search form span{
+    position: absolute;
+    right: 40px;
+    top: 7px;
+}
+
+.dashboard .search-box .search .notification span:nth-child(1){
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.dashboard .search-box .search .notification span:nth-child(2){
+    margin-top: 30px;
+}
+
+/* ============
+MAIN
+========= */
+/* --- chart
+------ */
+
+.dashboard .main .chart .first-chart{
+    width: 40%;
+    height: 50%;
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.dashboard .main .chart .second-chart{
+    width: 40%;
+    height: 50%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.dashboard .main .chart .third-chart{
+    width: 40%;
+    height: 50%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+/* --------
+Table
+------- */
+.dashboard .main .table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid green;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 40px 20px 30px;
+}
+
+.dashboard .main .table .head{
+    color: white;
+    border: 0px 1px black;
+}
+
+/* -----
+Main end
+------- */
+
