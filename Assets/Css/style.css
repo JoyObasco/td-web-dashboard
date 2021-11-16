@@ -22,7 +22,7 @@ body{
 }
 
 .dashboard{
-    padding: 0px 15px;
+    padding: 0px 10px;
     margin: 0px auto;
 }
 
@@ -34,31 +34,33 @@ Navigation
 .dashboard .navigation{
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
     margin-top: 10px;
+    flex-direction: column;
+    width: fit-content;
 }
 
 .dashboard .navigation img.logo{
-    width: 70px;
-    height: 60px;
-    image-rendering: pixelated;
-    border-radius: 10px;
+    width: 50%;
+    height: auto;
 }
 
-.dashboard .navigation div .icons{
-    background-color: black;
+.dashboard .navigation div ul{
+    list-style-type: none;
     margin-left: 5px;
-    margin-left: 5px;
-    margin-top: 2rem;
+    margin-top: 15rem;
     font-size: 20px;
     color: #ffffff;
-    display: flex;
 }
 
-.dashboard .navigation div .upgrade{
+.dashboard .navigation div ul li{
     margin-top: 10px;
-    width: 50px;
+    background-color: black;
+    border: 0px solid white;
+    width: 170px;
     height: 50px;
+    margin-left: -40px;
+    padding: 5px 0px 0px 8px;
 }
 
 .dashboard .navigation .upgrade{
@@ -66,8 +68,9 @@ Navigation
     border-radius: 10px;
     width: 200px;
     height: 200px;
-    margin-top: 4rem;
+    margin-top: 15rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .dashboard .navigation .upgrade .box{
@@ -138,41 +141,81 @@ MAIN
 ------ */
 
 .dashboard .main .chart .first-chart{
-    width: 40%;
+    width: 60%;
     height: 50%;
-    border: 1px solid black;
+
     margin-top: 100px;
     margin-bottom: 20px;
+    background-color: rgb(174, 156, 156);
+    padding: 5px 100px 5px 5px;
+    box-shadow: 5px 5px rgba( 0 0 0 / -01);
+    border-radius: 10px;
 }
 
 .dashboard .main .chart .second-chart{
-    width: 40%;
+    width: 60%;
     height: 50%;
-    border: 1px solid black;
     margin-bottom: 20px;
+    background-color: rgb(174, 156, 156);
+    padding: 5px 100px 5px 5px;
+    box-shadow: 5px 5px rgba( 0 0 0 / -01);
+    border-radius: 10px;
 }
 
 .dashboard .main .chart .third-chart{
-    width: 40%;
+    width: 60%;
     height: 50%;
-    border: 1px solid black;
     margin-bottom: 20px;
+    background-color: rgb(174, 156, 156);
+    padding: 5px 100px 5px 5px;
+    box-shadow: 5px 5px  rgba( 0 0 0 / -01);
+    border-radius: 10px;
+}
+
+.dashboard .main .chart div h4{
+    top: -40px;
 }
 /* --------
 Table
 ------- */
 .dashboard .main .table{
     width: 100%;
-    border-collapse: collapse;
-    border: 1px solid green;
+    background-color: silver;
+    box-shadow: 10px 10px whitesmoke;
     margin: 10px 10px 10px 10px;
     padding: 10px 40px 20px 30px;
+    border-radius: 15px;
 }
 
 .dashboard .main .table .head{
     color: white;
-    border: 0px 1px black;
+    background-color: black;
+    border: 6px solid black;
+    padding: 0px 0px 0px 0px;
+    vertical-align: 0px;
+    border-collapse: collapse;
 }
+
+.dashboard .main .main-end{
+    color: white;
+    background-color: black;
+    width: auto;
+    height: 10%;
+    text-align: left;
+    padding-left: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.dashboard .main .main-end .Learn{
+    border-radius: 20px;
+    background-color: white;
+    color: palevioletred;
+    padding: 10px 30px 10px 30px;
+    font-weight: 900;
+}
+
 
 /* -----
 Main end
