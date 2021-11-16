@@ -37,7 +37,7 @@ Navigation
     height: 100%;
     margin-top: 10px;
     flex-direction: column;
-    width: fit-content;
+
 }
 
 .dashboard .navigation img.logo{
