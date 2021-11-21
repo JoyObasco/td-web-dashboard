@@ -2,16 +2,15 @@
 *::before,
 *::after{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html{
-  width: 100%;
+    max-width: 100vw;
 }
 
 html, body{
-  padding: 0;
-  margin: 0;
-  min-height: 100vh;
   max-width: 100vw;
   height: 100vh;
 }
@@ -21,23 +20,18 @@ body{
     background-color: #F7F7F7;
 }
 
-.dashboard{
-    padding: 0px 10px;
-    margin: 0px auto;
-}
-
 
 
 /* -----------
 Navigation
 --------- */
-.dashboard .navigation{
+/* .dashboard .navigation{
     display: flex;
     justify-content: space-between;
     height: 100%;
     margin-top: 10px;
     flex-direction: column;
-
+    width: 200px;
 }
 
 .dashboard .navigation img.logo{
@@ -59,7 +53,6 @@ Navigation
     border: 0px solid white;
     width: 170px;
     height: 50px;
-    margin-left: -40px;
     padding: 5px 0px 0px 8px;
 }
 
@@ -83,7 +76,7 @@ Navigation
 }
 
 .dashboard .navigation .upgrade input{
-    margin-top: -4px;
+    margin-top: 4px;
     color: white;
     background-color: black;
     width: 8rem;
@@ -94,7 +87,7 @@ Navigation
 /* -----------
 Search Box
 --------- */
-.dashboard .search-box{
+/* .dashboard .search-box{
     border:  0px 0px 3px 0px black;
     width: auto;
     height: 30vw;
@@ -139,18 +132,18 @@ MAIN
 ========= */
 /* --- chart
 ------ */
-
-.dashboard .main .chart .first-chart{
+/* .dashboard .main .chart .first-chart{
     width: 60%;
     height: 50%;
-
     margin-top: 100px;
     margin-bottom: 20px;
     background-color: rgb(174, 156, 156);
     padding: 5px 100px 5px 5px;
     box-shadow: 5px 5px rgba( 0 0 0 / -01);
     border-radius: 10px;
+    display: flex;
 }
+
 
 .dashboard .main .chart .second-chart{
     width: 60%;
@@ -160,6 +153,7 @@ MAIN
     padding: 5px 100px 5px 5px;
     box-shadow: 5px 5px rgba( 0 0 0 / -01);
     border-radius: 10px;
+    display: flex;
 }
 
 .dashboard .main .chart .third-chart{
@@ -170,21 +164,22 @@ MAIN
     padding: 5px 100px 5px 5px;
     box-shadow: 5px 5px  rgba( 0 0 0 / -01);
     border-radius: 10px;
+    display: flex;
 }
 
-.dashboard .main .chart div h4{
-    top: -40px;
-}
 /* --------
 Table
 ------- */
-.dashboard .main .table{
+/* .dashboard .main .table table{
     width: 100%;
+    border-collapse: collapse;
     background-color: silver;
     box-shadow: 10px 10px whitesmoke;
     margin: 10px 10px 10px 10px;
     padding: 10px 40px 20px 30px;
-    border-radius: 15px;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: left;
 }
 
 .dashboard .main .table .head{
@@ -193,19 +188,28 @@ Table
     border: 6px solid black;
     padding: 0px 0px 0px 0px;
     vertical-align: 0px;
-    border-collapse: collapse;
-}
-
-.dashboard .main .main-end{
+}  */
+/* --------
+Main End
+---------- */
+/* .dashboard .main .main-end{
     color: white;
     background-color: black;
     width: auto;
-    height: 10%;
-    text-align: left;
+    height: 300px;
     padding-left: 25px;
     border-radius: 15px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+ 
+.dashboard .main .main-end h4{
+    text-align: left;
+}
+
+.dashboard .main .main-end p{
+    text-align: left;
 }
 
 .dashboard .main .main-end .Learn{
@@ -214,10 +218,273 @@ Table
     color: palevioletred;
     padding: 10px 30px 10px 30px;
     font-weight: 900;
-}
-
-
+    margin-top: 30px;
+} */
+/* .dashboard .main .main-end .female img{
+    position: relative;
+    bottom: 50px;
+} */
 /* -----
 Main end
 ------- */
+/* =======
+IPAD
+======== */
+/* ------
+NAVIGATION
+--------- */
+/* 
+@media only screen and (min-width:768px) {
+    html{
+        max-width: 100%;
+    }
+    body{
+        font-size: 19px;
+        max-width: 100%;
+    }
 
+    .dashboard .navigation img.logo{
+        width: 40%;
+        height: auto;
+    }
+
+    .dashboard .navigation div ul li{
+        width: 200px;
+        font-size: 22px;
+    } */
+    /* --------
+    CHART
+    --------- */
+    /* .dashboard .main .chart P{
+        font-size: 30px;
+    }
+
+    /* ------
+    TABLE
+    ------ */
+    /* .dashboard .main .table table{
+        line-height: 60px;
+        text-align: left;
+    } */
+/* 
+}  */
+
+/* ====
+Side Bar
+====== */
+    .dashboard .navigation{
+        height: auto;
+        width: 250px;
+        box-shadow: 1px 3px 3px;
+        padding-bottom: 20px;
+        
+    }
+
+    .dashboard .navigation .logo{
+        padding: 10px 0px 0px 15px;
+        width: auto;
+    }
+
+    .dashboard .navigation div ul{
+        list-style-type: none;
+        margin-top: 5rem;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    
+    .dashboard .navigation div ul li{
+        margin-top: 10px;
+        background-color: black;
+        border: 0px solid white;
+        width: 250px;
+        height: 50px;
+        padding: 5px 0px 0px 25px;
+    }
+
+    /* ----
+    Upgrade Box
+    --------- */
+
+    .dashboard .navigation .upgrade{
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin: 6rem 0rem 0rem 1rem;
+    }
+    
+    .dashboard .navigation .upgrade .box{
+        margin-top: -30px;
+    }
+    
+    .nav-item{
+        position: relative;
+        top: 7px;
+        left: 2px;
+    }
+
+    .dashboard .navigation .upgrade p{
+        margin-top: 6px;
+        align-content: center;
+    }
+    
+    .dashboard .navigation .upgrade button{
+        margin-top: 10px;
+        color: white;
+        background-color: #00838f;
+        width: 8rem;
+        height: 2rem;
+        border-radius: 3px;
+    }
+
+
+
+    /* =====
+     Navigation
+    ======= */
+
+    .dashboard{
+        display: flex;
+        width: 100%;
+    }
+
+    .dashboard nav{
+        display: flex;
+        width: auto;
+        height: 60px;
+        justify-content: space-between;
+        box-shadow: 0px 3px 2px;
+        background-color: #f4f4f4;
+    }
+
+    .dashboard nav div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dashboard nav input{
+        margin-top: 10px;
+        width: 80%;
+        margin-bottom: 10px;
+        padding: 10px 50px 10px 5px;
+        border: 1px solid black;
+        border-radius: 2rem;
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+    }
+
+    .dashboard nav div .mag{
+        position: absolute;
+        top: 20px;
+        right: 52px;
+    }
+
+    .dashboard nav div .note{
+        margin-top: 15px;
+        padding-left: 20px;
+    }
+
+    .dashboard nav h2{
+        margin-top: 10px;
+    }
+    /* ======
+    CHART
+    ======= */
+    .main-wrap{
+        width: 100%;
+    }
+
+    .chart{
+        display: flex;
+        width: 300px;
+        position: relative;
+        height: 300px;
+
+        
+    }
+
+    .Activities{
+        display: flex;
+        width: 145px;
+        height: 140px;
+        position: relative;
+        box-sizing: 1px 3px 2px rgba(0, 0, 0 ,0.4);
+        margin: 20px 30px 0px 150px ;
+        border: 1px solid #f4f4f4;
+        background-color: rebeccapurple;
+        padding: 10px 1px 10px 10px;
+
+    }
+    #mychart{
+        width: 145px;
+        height: 145px;
+    }
+
+    /* .one{
+        position: absolute;
+        transform: translate(90%,10%);
+        top: 40%;
+    }
+
+    .zero{
+        position: absolute;
+        transform: translate(90%,10%);
+        top: 40%;
+    }
+
+    .two{
+        position: absolute;
+        transform: translate(90%,10%);
+        top: 40%;
+    } */
+
+    /* =======
+    TABLE
+    ======= */
+    .dashboard .main .table table{
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #f4f4f4;
+        box-shadow: 10px 10px 10px whitesmoke;
+        margin: 10px 10px 10px 10px;
+        padding: 10px 40px 20px 30px;
+        border-radius: 10px;
+        line-height: 40px;
+        text-align: left;
+    }
+    
+    .dashboard .main .table .head{
+        color: white;
+        background-color: black;
+        border: 6px solid black;
+        padding: 0px 0px 0px 0px;
+        vertical-align: 0px;
+        border-radius: 3px;
+    }
+
+    /* -----MAIN END---- */
+    .dashboard .main .main-end{
+        width: auto;
+        background-color: black;
+        box-shadow: 1px 3px 2px;
+        color: white;
+        text-align: left;
+        margin: 50px 20px 15px 20px;
+        padding: -75px 5px 5px 5px;
+        border-radius: 7px;
+    }
+
+    .dashboard .main .main-end .Learn{
+        border-radius: 20px;
+        background-color: white;
+        color: palevioletred;
+        padding: 10px 30px 10px 30px;
+        font-weight: 900;
+        margin-top: 30px;
+    }
+
+    .dashboard .main .main-end .female{
+        margin-left: 900px;
+        /* margin-top: 70px; */
+    }

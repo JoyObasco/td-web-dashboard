@@ -6,67 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Dashboard</title>
     <link rel="stylesheet" href="Assets/Css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="dashboard"> <!--DASHBOARD-->
 
-        <section class="navigation"> <!--NAVIGATION-->
+        <section class="navigation"> <!--SIDE BAR-->
             <img src="Assets/img/Instincthub logo.png" alt="InstinctHub Logo" class="logo">
 
             <div>
                 <ul>
-                    <li><img src="Assets/img/bx_bxs-dashboard.png" alt="Overview"> Overview</li>
-                    <li><img src="Assets/img/akar-icons_file.png" alt="Classes"> Classes</li>
-                    <li><img src="Assets/img/codicon_graph.png" alt="Analytics"> Analytics</li>
-                    <li><img src="Assets/img/ic_baseline-group.png" alt="Community"> Community</li>
-                    <li><img src="Assets/img/fe_logout.png" alt="Logout"> Logout</li>
+                    <li><img src="Assets/img/bx_bxs-dashboard.png" alt="Overview" class="nav-item"> Overview</li>
+                    <li><img src="Assets/img/akar-icons_file.png" alt="Classes" class="nav-item"> Classes</li>
+                    <li><img src="Assets/img/codicon_graph.png" alt="Analytics" class="nav-item"> Analytics</li>
+                    <li><img src="Assets/img/ic_baseline-group.png" alt="Community" class="nav-item"> Community</li>
+                    <li><img src="Assets/img/fe_logout.png" alt="Logout" class="nav-item"> Logout</li>
                 </ul>
             </div>
             <div class="upgrade">
                 <img src="Assets/img/Upgrade illustration.png" alt="" class="box">
-                <p><b>Upgrade your student portal account</b></p>
-                <input type="submit" value="Upgrade">
+                <p><b>Upgrade your <br> student portal <br> account</b></p>
+                <button> Upgrade</button>
             </div>
-        </section> <!--NAVIGATION END-->
-        
+        </section> <!--SIDE BAR ENDS-->
 
-        <section class="search-box"> <!--SEARCH-BOX-->
-            <h3>My course dashboard</h3>
-            <div class="search">
-                <form action="">
-                    <input type="text" name="search" id="search" placeholder="You are looking for...">
-                    <span class="mag"><img src="Assets/img/bx_bx-search.png" alt=""></span>
-                </form>
-                <span class="notification">
-                    <span><img src="Assets/img/codicon_bell-dot.png" alt="notification"></span>
-                    <span><img src="Assets/img/User profile.png" alt="User"></span>
-                </span>
-            </div>
-        </section> <!--SEARCH-BOX END-->
+      
+     <div class="main-wrap"> 
+        <nav> <!--NAVIGATION-->
+            <h2>My course dashboard</h2>
+          <div>
+            <input type="text" name="search" id="search" placeholder="You are looking for...">
+            <span class="mag"><img src="Assets/img/bx_bx-search.png" alt=""></span>
+            <span class="note"><img src="Assets/img/codicon_bell-dot.png" alt="notification"></span>
+            <span class="note"><img src="Assets/img/User profile.png" alt="User"></span>
+         </div>
+        </nav> <!--NAVIGATION END-->
 
 
-        <section class="main"> <!--MAIN-->
+        <section class="main"> <!---MAIN-->
+            <!-- Chart -->
             <div class="chart">
-                <div class="first-chart">
+                <div class="Activities">             
                     <canvas id="myChart" width="400" height="400"></canvas>
-                    <h4>Daily</h4>
-                    <p>Activities</p>
+                 
+                 <div>
+                    <h1 class="one">71%</h1>
+                    <p> <b>Daily</b> <br> Activities </p>
+                 </div> 
                 </div>
 
-                <div class="second-chart">
+                <div class="Activities"> 
                     <canvas id="TwoChart" width="400" height="400"></canvas>
-                    <h4>Monthly</h4>
-                    <p>Activities</p>
+                 <div>
+                    <h1 class="zero">20%</h1>
+                    <p><b>Monthly</b> <br> Activities</p>
+                 </div>
                 </div>
 
-                <div class="third-chart">
-                    <canvas id="ThreeChart" width="400" height="400"></canvas>
-                    <h4>Yearly</h4>
-                    <p>Activities</p>
+                <div class="Activities">               
+                    <canvas id="ThreeChart" width="400" height="400"></canvas>                    
+                 <div>
+                    <h1 class="two">12%</h1>
+                    <p> <b>Yearly</b> <br> Activities</p>
+                 </div>
                 </div>
             </div>
-
+            <!-- Chart End -->
+          <!-- Table -->
             <div class="table">
                 <table>
                     <tr class="head">
@@ -142,64 +148,20 @@
                     </tr>
                 </table>
             </div>
+            <!-- table end -->
 
             <div class="main-end">
                 <h1>When nothing goes right, go left</h1>
                 <p>Build your skills with courses and degree online from anywhere with professional instructors</p>
-                <button class="Learn"> Learn more</button>
+                <button class="Learn"> Learn more</button> 
                 <span class="female"><img src="Assets/img/female image.png" alt="Female Image"> </span>
             </div>
-        </section> <!--MAIN END-->
-    </div> <!--DASHBOARD END-->
-    <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-         var myChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                datasets: [{
-                    label: 'My First Dataset',
-                    data: [71, 29],
-                    backgroundColor: [
-                   'rgb(170, 51, 106)',
-                   'rgb(70,130,180)',
-                    ],
-                    hoverOffset: 4
-                }]
-                
-            },
-        });
-
-        var ctx = document.getElementById('TwoChart').getContext('2d');
-         var myChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                datasets: [{
-                    label: 'My First Dataset',
-                    data: [80, 20],
-                    backgroundColor: [
-                   'rgb(170, 51, 106)',
-                   'rgb(70,130,180)',
-                    ],
-                    hoverOffset: 4
-                }]
-            },
-        });
-
-        var ctx = document.getElementById('ThreeChart').getContext('2d');
-         var myChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                datasets: [{
-                    label: 'My First Dataset',
-                    data: [88, 12],
-                    backgroundColor: [
-                   'rgb(170, 51, 106)',
-                   'rgb(70,130,180)',
-                    ],
-                    hoverOffset: 4
-                }]
-            },
-        });
-    </script>
+        </section> <!-- MAIN END -->
+      </div>
+    </div> <!-- DASHBOARD END -->
+    
+    <script src="Assets/daily.js"></script>
+    <script src="Assets/monthly.js"></script>
+    <script src="Assets/yearly.js"></script>
 </body>
 </html>
