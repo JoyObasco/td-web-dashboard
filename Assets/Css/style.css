@@ -294,8 +294,8 @@ Side Bar
         background-color: black;
         border: 0px solid white;
         width: 250px;
-        height: 50px;
-        padding: 5px 0px 0px 25px;
+        height: 70px;
+        padding: 10px 0px 0px 25px;
     }
 
     /* ----
@@ -308,7 +308,7 @@ Side Bar
         width: 200px;
         height: 200px;
         text-align: center;
-        margin: 6rem 0rem 0rem 1rem;
+        margin: 175px 0px 0px 15px;
         box-shadow: 4px 4px 3px;
     }
     
@@ -362,7 +362,7 @@ Side Bar
     }
 
     .dashboard nav input{
-        width: 200px;
+        width: 300px;
         padding: 10px 50px 10px 5px;
         border: 1px solid black;
         border-radius: 2rem;
@@ -374,16 +374,27 @@ Side Bar
     .dashboard nav div .mag{
         position: absolute;
         top: 20px;
-        right: 112px;
+        right: 170px;
     }
 
     .dashboard nav div .note{
         margin-top: 15px;
-        padding-left: 20px;
+        padding-left: -5px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    .dashboard nav div .user{
+        margin-top: 15px;
+        padding-left: -5px;
+        margin-right: 50px;
+        margin-left: 10px;
+        padding-bottom: 15px;
     }
 
     .dashboard nav h2{
         margin-top: 10px;
+        margin-left: 70px;
     }
     /* ======
     CHART
@@ -396,13 +407,13 @@ Side Bar
         display: flex;
         width: 300px;
         position: relative;
-        height: 300px;  
+        height: 250px;  
     }
 
     .dashboard .main .chart .first-chart{
         width: 80%;
         height: 50%;
-        margin: 100px 70px 20px 50px;
+        margin: 40px 90px 0px 70px;
         background-color: #f4f4f4;
         padding: 5px 120px 5px 15px;
         box-shadow: 5px 5px rgba( 0 0 0 / -01);
@@ -415,8 +426,7 @@ Side Bar
     .dashboard .main .chart .second-chart{
         width: 80%;
         height: 50%;
-        margin-top: 100px;
-        margin-bottom: 20px;
+        margin: 40px 90px 0px 140px;
         background-color: #f4f4f4;
         padding: 5px 120px 5px 15px;
         box-shadow: 5px 5px rgba( 0 0 0 / -01);
@@ -428,7 +438,7 @@ Side Bar
     .dashboard .main .chart .third-chart{
         width: 80%;
         height: 50%;
-        margin: 100px 0px 20px 50px;
+        margin: 40px 0px 0px 90px;
         background-color: #f4f4f4;
         padding: 5px 120px 5px 15px;
         box-shadow: 5px 5px  rgba( 0 0 0 / -01);
@@ -442,7 +452,7 @@ Side Bar
         position: absolute;
         transform: translate(90%,10%);
         right: 77%;
-        top: 35%;
+        top: 40%;
         font-size: 18px;
     }
 
@@ -450,7 +460,7 @@ Side Bar
         position: absolute;
         transform: translate(90%,10%);
         right: 77%;
-        top: 35%;
+        top: 40%;
         font-size: 18px;
     }
 
@@ -458,7 +468,7 @@ Side Bar
         position: absolute;
         transform: translate(90%,10%);
         right: 77%;
-        top: 35%;
+        top: 40%;
         font-size: 18px;
     }
 
@@ -472,11 +482,11 @@ Side Bar
     TABLE
     ======= */
     .dashboard .main .table table{
-        width: 100%;
+        width: 90%;
         border-collapse: collapse;
         background-color: #f4f4f4;
         box-shadow: 6px 6px 6px black;
-        margin: 10px 10px 10px 70px;
+        margin: -45px 10px 10px 70px;
         padding: 10px 40px 20px 30px;
         border-radius: 10px;
         line-height: 40px;
@@ -495,8 +505,9 @@ Side Bar
     /* -----MAIN END---- */
 
     .dashboard .main .main-end{
-        margin-top: 30px;
+        margin: 70px 50px 10px 70px;
         width: auto;
+        max-height: 200px;
         background-color: black;
         box-shadow: 1px 3px 2px;
         color: white;
@@ -511,7 +522,7 @@ Side Bar
         color: palevioletred;
         padding: 10px 30px 10px 30px;
         font-weight: 900;
-        margin-top: 30px;
+        object-position: top;
     }
 
 
