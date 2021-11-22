@@ -6,18 +6,15 @@
   margin: 0;
 }
 
-html{
-    max-width: 100vw;
-}
 
 html, body{
   max-width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 body{
     margin: 0px;
-    background-color: #F7F7F7;
+    background-color: #ffffff;
 }
 
 
@@ -274,9 +271,9 @@ Side Bar
 ====== */
     .dashboard .navigation{
         height: auto;
-        width: 250px;
         box-shadow: 1px 3px 3px;
-        padding-bottom: 20px;
+        padding: 20px 0;
+        width: 250px;
         
     }
 
@@ -312,6 +309,7 @@ Side Bar
         height: 200px;
         text-align: center;
         margin: 6rem 0rem 0rem 1rem;
+        box-shadow: 4px 4px 3px;
     }
     
     .dashboard .navigation .upgrade .box{
@@ -325,17 +323,17 @@ Side Bar
     }
 
     .dashboard .navigation .upgrade p{
-        margin-top: 6px;
+        margin-top: -2px;
         align-content: center;
     }
     
     .dashboard .navigation .upgrade button{
-        margin-top: 10px;
+        margin-top: 2px;
         color: white;
         background-color: #00838f;
         width: 8rem;
         height: 2rem;
-        border-radius: 3px;
+        border-radius: 5px;
     }
 
 
@@ -344,7 +342,7 @@ Side Bar
      Navigation
     ======= */
 
-    .dashboard{
+    .dashboard {
         display: flex;
         width: 100%;
     }
@@ -364,20 +362,19 @@ Side Bar
     }
 
     .dashboard nav input{
-        margin-top: 10px;
-        width: 80%;
-        margin-bottom: 10px;
+        width: 200px;
         padding: 10px 50px 10px 5px;
         border: 1px solid black;
         border-radius: 2rem;
         background-color: rgba(0, 0, 0, 0);
         position: relative;
+        margin: 10px 0px 10px 0px;
     }
 
     .dashboard nav div .mag{
         position: absolute;
         top: 20px;
-        right: 52px;
+        right: 112px;
     }
 
     .dashboard nav div .note{
@@ -399,45 +396,77 @@ Side Bar
         display: flex;
         width: 300px;
         position: relative;
-        height: 300px;
-
-        
+        height: 300px;  
     }
 
-    .Activities{
+    .dashboard .main .chart .first-chart{
+        width: 80%;
+        height: 50%;
+        margin: 100px 70px 20px 50px;
+        background-color: #f4f4f4;
+        padding: 5px 120px 5px 15px;
+        box-shadow: 5px 5px rgba( 0 0 0 / -01);
+        border-radius: 10px;
         display: flex;
-        width: 145px;
-        height: 140px;
         position: relative;
-        box-sizing: 1px 3px 2px rgba(0, 0, 0 ,0.4);
-        margin: 20px 30px 0px 150px ;
-        border: 1px solid #f4f4f4;
-        background-color: rebeccapurple;
-        padding: 10px 1px 10px 10px;
-
     }
-    #mychart{
-        width: 145px;
-        height: 145px;
+    
+    
+    .dashboard .main .chart .second-chart{
+        width: 80%;
+        height: 50%;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        background-color: #f4f4f4;
+        padding: 5px 120px 5px 15px;
+        box-shadow: 5px 5px rgba( 0 0 0 / -01);
+        border-radius: 10px;
+        display: flex;
+        position: relative;
+    }
+    
+    .dashboard .main .chart .third-chart{
+        width: 80%;
+        height: 50%;
+        margin: 100px 0px 20px 50px;
+        background-color: #f4f4f4;
+        padding: 5px 120px 5px 15px;
+        box-shadow: 5px 5px  rgba( 0 0 0 / -01);
+        border-radius: 10px;
+        display: flex;
+        position: relative;
     }
 
-    /* .one{
+
+    .one{
         position: absolute;
         transform: translate(90%,10%);
-        top: 40%;
+        right: 77%;
+        top: 35%;
+        font-size: 18px;
     }
 
     .zero{
         position: absolute;
         transform: translate(90%,10%);
-        top: 40%;
+        right: 77%;
+        top: 35%;
+        font-size: 18px;
     }
 
     .two{
         position: absolute;
         transform: translate(90%,10%);
-        top: 40%;
-    } */
+        right: 77%;
+        top: 35%;
+        font-size: 18px;
+    }
+
+    .dashboard .main .chart p{
+        line-height: 30px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
 
     /* =======
     TABLE
@@ -446,8 +475,8 @@ Side Bar
         width: 100%;
         border-collapse: collapse;
         background-color: #f4f4f4;
-        box-shadow: 10px 10px 10px whitesmoke;
-        margin: 10px 10px 10px 10px;
+        box-shadow: 6px 6px 6px black;
+        margin: 10px 10px 10px 70px;
         padding: 10px 40px 20px 30px;
         border-radius: 10px;
         line-height: 40px;
@@ -464,15 +493,16 @@ Side Bar
     }
 
     /* -----MAIN END---- */
+
     .dashboard .main .main-end{
+        margin-top: 30px;
         width: auto;
         background-color: black;
         box-shadow: 1px 3px 2px;
         color: white;
         text-align: left;
-        margin: 50px 20px 15px 20px;
-        padding: -75px 5px 5px 5px;
         border-radius: 7px;
+
     }
 
     .dashboard .main .main-end .Learn{
@@ -484,7 +514,4 @@ Side Bar
         margin-top: 30px;
     }
 
-    .dashboard .main .main-end .female{
-        margin-left: 900px;
-        /* margin-top: 70px; */
-    }
+
