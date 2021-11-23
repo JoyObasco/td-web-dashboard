@@ -271,14 +271,14 @@ Side Bar
 ====== */
     .dashboard .navigation{
         height: auto;
-        box-shadow: 1px 3px 3px;
-        padding: 20px 0;
+        box-shadow: rgba( 0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        padding: 10px 0;
         width: 250px;
         
     }
 
     .dashboard .navigation .logo{
-        padding: 10px 0px 0px 15px;
+        padding: 5px 0px 0px 15px;
         width: auto;
     }
 
@@ -298,6 +298,16 @@ Side Bar
         padding: 10px 0px 0px 25px;
     }
 
+    .dashboard .navigation div ul li .category{
+        width: 25px;
+        height: 70px;
+        background-color: #A25075;
+        border-radius: 0px 10px 10px 0px;
+        position: absolute;
+        left: 0;
+        margin: -10px;
+    }
+
     /* ----
     Upgrade Box
     --------- */
@@ -308,7 +318,7 @@ Side Bar
         width: 200px;
         height: 200px;
         text-align: center;
-        margin: 175px 0px 0px 15px;
+        margin: 235px 0px 0px 15px;
         box-shadow: 4px 4px 3px;
     }
     
@@ -352,7 +362,7 @@ Side Bar
         width: auto;
         height: 60px;
         justify-content: space-between;
-        box-shadow: 0px 3px 2px;
+        box-shadow: rgba( 0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         background-color: #f4f4f4;
     }
 
@@ -363,7 +373,7 @@ Side Bar
 
     .dashboard nav input{
         width: 300px;
-        padding: 10px 50px 10px 5px;
+        padding: 10px 50px 10px 10px;
         border: 1px solid black;
         border-radius: 2rem;
         background-color: rgba(0, 0, 0, 0);
@@ -374,7 +384,7 @@ Side Bar
     .dashboard nav div .mag{
         position: absolute;
         top: 20px;
-        right: 170px;
+        right: 190px;
     }
 
     .dashboard nav div .note{
@@ -385,22 +395,25 @@ Side Bar
     }
 
     .dashboard nav div .user{
-        margin-top: 15px;
         padding-left: -5px;
-        margin-right: 50px;
-        margin-left: 10px;
         padding-bottom: 15px;
+        margin: 15px 70px 0px 10px;
     }
 
     .dashboard nav h2{
-        margin-top: 10px;
-        margin-left: 70px;
+        margin-top: 15px;
+        margin-left: 90px;
     }
     /* ======
     CHART
     ======= */
     .main-wrap{
         width: 100%;
+    }
+
+    .wrapper{
+       display: flex;
+       justify-content: space-between;
     }
 
     .chart{
@@ -410,13 +423,17 @@ Side Bar
         height: 250px;  
     }
 
+    .main{
+        padding: 50px 30px;
+    }
+
     .dashboard .main .chart .first-chart{
         width: 80%;
         height: 50%;
-        margin: 40px 90px 0px 70px;
+        margin-left: 60px;
         background-color: #f4f4f4;
         padding: 5px 120px 5px 15px;
-        box-shadow: 5px 5px rgba( 0 0 0 / -01);
+        box-shadow: rgba( 100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 10px;
         display: flex;
         position: relative;
@@ -426,10 +443,10 @@ Side Bar
     .dashboard .main .chart .second-chart{
         width: 80%;
         height: 50%;
-        margin: 40px 90px 0px 140px;
+        margin-left: 40px;
         background-color: #f4f4f4;
         padding: 5px 120px 5px 15px;
-        box-shadow: 5px 5px rgba( 0 0 0 / -01);
+        box-shadow: rgba( 100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 10px;
         display: flex;
         position: relative;
@@ -438,10 +455,10 @@ Side Bar
     .dashboard .main .chart .third-chart{
         width: 80%;
         height: 50%;
-        margin: 40px 0px 0px 90px;
+        margin-left: 20px;
         background-color: #f4f4f4;
         padding: 5px 120px 5px 15px;
-        box-shadow: 5px 5px  rgba( 0 0 0 / -01);
+        box-shadow: rgba( 100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 10px;
         display: flex;
         position: relative;
@@ -451,31 +468,32 @@ Side Bar
     .one{
         position: absolute;
         transform: translate(90%,10%);
-        right: 77%;
-        top: 40%;
+        right: 62%;
+        top: 20%;
         font-size: 18px;
     }
 
     .zero{
         position: absolute;
         transform: translate(90%,10%);
-        right: 77%;
-        top: 40%;
+        right: 68%;
+        top: 20%;
         font-size: 18px;
     }
 
     .two{
         position: absolute;
         transform: translate(90%,10%);
-        right: 77%;
-        top: 40%;
+        right: 75%;
+        top: 20%;
         font-size: 18px;
     }
 
-    .dashboard .main .chart p{
+    .dashboard .main .wrapper p{
+        position: relative;
         line-height: 30px;
         margin-top: 30px;
-        margin-left: 20px;
+        margin-left: -90px;
     }
 
     /* =======
@@ -485,7 +503,7 @@ Side Bar
         width: 90%;
         border-collapse: collapse;
         background-color: #f4f4f4;
-        box-shadow: 6px 6px 6px black;
+        box-shadow: rgba( 0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         margin: -45px 10px 10px 70px;
         padding: 10px 40px 20px 30px;
         border-radius: 10px;
@@ -507,22 +525,38 @@ Side Bar
     .dashboard .main .main-end{
         margin: 70px 50px 10px 70px;
         width: auto;
-        max-height: 200px;
+        max-height: 230px;
         background-color: black;
         box-shadow: 1px 3px 2px;
         color: white;
-        text-align: left;
         border-radius: 7px;
+    }
 
+    .dashboard .main .main-end .footer{
+        padding: 20px 0px 0px 40px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .dashboard .main .main-end .footer h1{
+        font-size: 20px;
     }
 
     .dashboard .main .main-end .Learn{
         border-radius: 20px;
         background-color: white;
-        color: palevioletred;
+        color: #A25075;
         padding: 10px 30px 10px 30px;
         font-weight: 900;
         object-position: top;
+        margin-top: 90px;
+    }
+
+    .dashboard .main .main-end span{
+        position: relative;
+        height: 200px;
+        top: -253px;
+        right: -550px;
     }
 
 

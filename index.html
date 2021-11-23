@@ -16,7 +16,10 @@
 
             <div>
                 <ul>
-                    <li><img src="Assets/img/bx_bxs-dashboard.png" alt="Overview" class="nav-item"> Overview</li>
+                    <li>
+                        <div class="category"></div>
+                        <img src="Assets/img/bx_bxs-dashboard.png" alt="Overview" class="nav-item"> Overview
+                    </li>
                     <li><img src="Assets/img/akar-icons_file.png" alt="Classes" class="nav-item"> Classes</li>
                     <li><img src="Assets/img/codicon_graph.png" alt="Analytics" class="nav-item"> Analytics</li>
                     <li><img src="Assets/img/ic_baseline-group.png" alt="Community" class="nav-item"> Community</li>
@@ -45,32 +48,31 @@
 
         <section class="main"> <!---MAIN-->
             <!-- Chart -->
-            <div class="chart">
-             
+            <div class="wrapper">
+
+              <div class="chart">
                 <div class="first-chart">             
                     <canvas id="myChart" width="400" height="400"></canvas>
-                 
-                 <div>
+                </div>   
                     <h1 class="one">71%</h1>
                     <p> <b>Daily</b> <br> Activities </p>
-                 </div> 
-                </div>
+             </div> 
 
+             <div class="chart"> 
                 <div class="second-chart"> 
                     <canvas id="TwoChart" width="400" height="400"></canvas>
-                 <div>
+                </div>
                     <h1 class="zero">20%</h1>
                     <p><b>Monthly</b> <br> Activities</p>
-                 </div>
-                </div>
+             </div>
 
+             <div class="chart"> 
                 <div class="third-chart">               
-                    <canvas id="ThreeChart" width="400" height="400"></canvas>                    
-                 <div>
+                    <canvas id="ThreeChart" width="400" height="400"></canvas>
+                </div>                        
                     <h1 class="two">12%</h1>
                     <p> <b>Yearly</b> <br> Activities</p>
-                 </div>
-                </div>
+             </div> 
             </div>
             <!-- Chart End -->
           <!-- Table -->
@@ -153,11 +155,13 @@
     
             <div class="main-end">
              <div class="footer"> 
-                <h1>When nothing goes right, go left</h1>
-                <p>Build your skills with courses and degree online from anywhere with professional instructors</p>
+                <h1> <font size="7"> When nothing goes right, go left </font></h1>
+                <p>Build your skills with courses and degree online from <br> anywhere with professional instructors</p>
                 <button class="Learn"> Learn more</button> 
-                <span class="female"><img src="Assets/img/female image.png" alt="Female Image"> </span>
              </div>
+
+              <span class="female"><img src="Assets/img/female image.png" alt="Female Image"> </span>
+        
             </div>
         </section> <!-- MAIN END -->
       </div>
