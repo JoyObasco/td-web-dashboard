@@ -16,255 +16,6 @@ body{
     background-color: #f4f4f4;
 }
 
-
-
-/* -----------
-Navigation
---------- */
-/* .dashboard .navigation{
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    margin-top: 10px;
-    flex-direction: column;
-    width: 200px;
-}
-
-.dashboard .navigation img.logo{
-    width: 50%;
-    height: auto;
-}
-
-.dashboard .navigation div ul{
-    list-style-type: none;
-    margin-left: 5px;
-    margin-top: 15rem;
-    font-size: 20px;
-    color: #ffffff;
-}
-
-.dashboard .navigation div ul li{
-    margin-top: 10px;
-    background-color: black;
-    border: 0px solid white;
-    width: 170px;
-    height: 50px;
-    padding: 5px 0px 0px 8px;
-}
-
-.dashboard .navigation .upgrade{
-    border: 1px solid paleturquoise;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    margin-top: 15rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.dashboard .navigation .upgrade .box{
-    margin-top: -25px;
-}
-
-.dashboard .navigation .upgrade p{
-    margin-top: -6px;
-    align-content: center;
-}
-
-.dashboard .navigation .upgrade input{
-    margin-top: 4px;
-    color: white;
-    background-color: black;
-    width: 8rem;
-    height: 2rem;
-    border-radius: 6px;
-}
-
-/* -----------
-Search Box
---------- */
-/* .dashboard .search-box{
-    border:  0px 0px 3px 0px black;
-    width: auto;
-    height: 30vw;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 30px;
-}
-.dashboard .search-box h3{
-    font-size: 15px;
-}
-.dashboard .search-box .search form{
-    margin-top: 20px;
-    position: relative;
-}
-
-.dashboard .search-box .search form input{
-    width: 90%;
-    font: 16px;
-    padding: 10px 50px 10px 10px;
-    border: 1px solid black;
-    border-radius: 2rem;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.dashboard .search-box .search form span{
-    position: absolute;
-    right: 40px;
-    top: 7px;
-}
-
-.dashboard .search-box .search .notification span:nth-child(1){
-    margin-right: 30px;
-    margin-top: 10px;
-}
-
-.dashboard .search-box .search .notification span:nth-child(2){
-    margin-top: 30px;
-}
-
-/* ============
-MAIN
-========= */
-/* --- chart
------- */
-/* .dashboard .main .chart .first-chart{
-    width: 60%;
-    height: 50%;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    background-color: rgb(174, 156, 156);
-    padding: 5px 100px 5px 5px;
-    box-shadow: 5px 5px rgba( 0 0 0 / -01);
-    border-radius: 10px;
-    display: flex;
-}
-
-
-.dashboard .main .chart .second-chart{
-    width: 60%;
-    height: 50%;
-    margin-bottom: 20px;
-    background-color: rgb(174, 156, 156);
-    padding: 5px 100px 5px 5px;
-    box-shadow: 5px 5px rgba( 0 0 0 / -01);
-    border-radius: 10px;
-    display: flex;
-}
-
-.dashboard .main .chart .third-chart{
-    width: 60%;
-    height: 50%;
-    margin-bottom: 20px;
-    background-color: rgb(174, 156, 156);
-    padding: 5px 100px 5px 5px;
-    box-shadow: 5px 5px  rgba( 0 0 0 / -01);
-    border-radius: 10px;
-    display: flex;
-}
-
-/* --------
-Table
-------- */
-/* .dashboard .main .table table{
-    width: 100%;
-    border-collapse: collapse;
-    background-color: silver;
-    box-shadow: 10px 10px whitesmoke;
-    margin: 10px 10px 10px 10px;
-    padding: 10px 40px 20px 30px;
-    border-radius: 10px;
-    line-height: 40px;
-    text-align: left;
-}
-
-.dashboard .main .table .head{
-    color: white;
-    background-color: black;
-    border: 6px solid black;
-    padding: 0px 0px 0px 0px;
-    vertical-align: 0px;
-}  */
-/* --------
-Main End
----------- */
-/* .dashboard .main .main-end{
-    color: white;
-    background-color: black;
-    width: auto;
-    height: 300px;
-    padding-left: 25px;
-    border-radius: 15px;
-    margin-top: 100px;
-    margin-bottom: 10px;
-    text-align: left;
-}
- 
-.dashboard .main .main-end h4{
-    text-align: left;
-}
-
-.dashboard .main .main-end p{
-    text-align: left;
-}
-
-.dashboard .main .main-end .Learn{
-    border-radius: 20px;
-    background-color: white;
-    color: palevioletred;
-    padding: 10px 30px 10px 30px;
-    font-weight: 900;
-    margin-top: 30px;
-} */
-/* .dashboard .main .main-end .female img{
-    position: relative;
-    bottom: 50px;
-} */
-/* -----
-Main end
-------- */
-/* =======
-IPAD
-======== */
-/* ------
-NAVIGATION
---------- */
-/* 
-@media only screen and (min-width:768px) {
-    html{
-        max-width: 100%;
-    }
-    body{
-        font-size: 19px;
-        max-width: 100%;
-    }
-
-    .dashboard .navigation img.logo{
-        width: 40%;
-        height: auto;
-    }
-
-    .dashboard .navigation div ul li{
-        width: 200px;
-        font-size: 22px;
-    } */
-    /* --------
-    CHART
-    --------- */
-    /* .dashboard .main .chart P{
-        font-size: 30px;
-    }
-
-    /* ------
-    TABLE
-    ------ */
-    /* .dashboard .main .table table{
-        line-height: 60px;
-        text-align: left;
-    } */
-/* 
-}  */
-
 /* ====
 Side Bar
 ====== */
@@ -498,7 +249,7 @@ Side Bar
     /* =======
     TABLE
     ======= */
-    .dashboard .main .table table{
+    table{
         width: 90%;
         border-collapse: collapse;
         background-color: #f5f5f5;
@@ -507,12 +258,33 @@ Side Bar
         padding: 10px 40px 20px 30px;
         border-radius: 10px;
         line-height: 40px;
-        text-align: left;
+        text-align: center;
+    }
+
+    thead th:nth-child(1){
+        border-top-left-radius: 10px;
+        width: 15%;
+        text-align: center;
+    }
+    thead th:nth-child(2){
+        width: 25%;
+
+    }
+    thead th:nth-child(3){
+        width: 25%;
+    }
+
+    thead th:nth-child(4){
+        width: 20%;
+    }
+
+    thead th:nth-child(5){
+        border-top-right-radius: 10px;
     }
     
-    .dashboard .main .table table .head{
-        color: white;
+    th{
         background-color: #242323;
+        color: white;
     }
 
 
@@ -534,6 +306,10 @@ Side Bar
         line-height: 20px;
     }
 
+    .footer h1{
+        font-size: 30px;
+    }
+
     .dashboard .main .main-end .footer p{
         margin-top: 20px;
     }
@@ -545,13 +321,107 @@ Side Bar
         padding: 10px 30px 10px 30px;
         font-weight: 900;
         object-position: top;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .dashboard .main .main-end span{
         position: relative;
         height: 200px;
-        top: -253px;
+        top: -233px;
         right: -550px;
     }
 
+    /* =======
+    Media Query iPad 768px 
+    ============*/
+    @media only screen and (max-width:1024px) and (min-width:768px) {
+        /* =====
+        Navigation
+        ===== */
+
+        .dashboard nav{
+            width: 818px;
+        }
+
+        .dashboard nav h2{
+            margin-top: 15px;
+            margin-left: 55px;
+            font-size: 20px;
+        }
+
+        .dashboard nav input{
+            width: 220px;
+        }
+
+        .dashboard nav div .mag{
+            right: -100px;
+        }
+
+        /* ====
+        CHART
+        ===== */
+        .dashboard .main .chart .first-chart{
+            width: 150%;
+            height: 50%;
+            margin-left: 20px;
+        }
+
+        .dashboard .main .chart .second-chart{
+            width: 105%;
+            height: 50%;
+            margin-left: 40px;
+        }
+        
+        .dashboard .main .chart .third-chart{
+            width: 150%;
+            height: 50%;
+            margin-left: 35px;
+        }
+
+        .one{
+            right: 68%;
+        }
+    
+        .zero{
+            right: 62%;
+        }
+    
+        .two{
+            right: 64%;
+        }
+    }
+
+    /* ====
+    TABLE
+    ====== */
+    /* table{
+        width: 105%;
+        margin-left: 20px;
+    } */
+
+    /* ====
+    MAIN END
+    ====== */
+
+    /* .dashboard .main .main-end{
+        width: 750px;
+        margin-left: 20px;
+    }
+
+    .dashboard .main .main-end span{
+        position: relative;
+        height: 200px;
+        top: -233px;
+        right: -420px;
+    } */
+
+    
+    /* =======
+    Media Query Mobile 360px
+    ======== */
+
+    /* @media only screen and (min-width:360px) and (max-width:640) {
+        .dashboard .navigation{
+            display: none;
+         }
+    } */
