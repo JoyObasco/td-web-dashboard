@@ -96,8 +96,6 @@ Side Bar
         border-radius: 5px;
     }
 
-
-
     /* =====
      Navigation
     ======= */
@@ -413,15 +411,4 @@ Side Bar
         height: 200px;
         top: -233px;
         right: -420px;
-    } */
-
-    
-    /* =======
-    Media Query Mobile 360px
-    ======== */
-
-    /* @media only screen and (min-width:360px) and (max-width:640) {
-        .dashboard .navigation{
-            display: none;
-         }
     } */
